@@ -1,0 +1,42 @@
+
+Arguments: 
+  D:\Softwaregood\node.js\node.exe C:\Users\yuli\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add commander.js
+
+PATH: 
+  C:\Users\yuli\bin;D:\Softwaregood\cmder\bin;D:\Softwaregood\cmder\vendor\bin;C:\Program Files\Git\bin;D:\Softwaregood\cmder\vendor\git-for-windows\mingw64\bin;D:\Softwaregood\cmder\vendor\git-for-windows\usr\local\bin;D:\Softwaregood\cmder\vendor\git-for-windows\usr\bin;D:\Softwaregood\cmder\vendor\git-for-windows\usr\bin;D:\Softwaregood\cmder\vendor\git-for-windows\mingw64\bin;D:\Softwaregood\cmder\vendor\git-for-windows\usr\bin;C:\Users\yuli\bin;D:\Softwaregood\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Softwaregood\cmder\vendor\conemu-maximus5;D:\Softwaregood\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files\MATLAB\R2016a\runtime\win64;C:\Program Files\MATLAB\R2016a\bin;C:\Program Files\MATLAB\R2016a\polyspace\bin;C:\Program Files (x86)\NVIDIA CorporationC;D:\Softwaregood\cmder\vendor\git-for-windows\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DA\PhysX\Common;D:\neo\path\apache-maven-3.5.0\bin;C:\Program Files\Java\jdk1.8.0_144;D:\apache-tomcat-8.5.46-windows-x64\apache-tomcat-8.5.46\bin;D:\Softwaregood\Git\cmd;D:\Softwaregood\node.js;D:\VSCode-win32-x64-1.44.2\bin;C:\Users\yuli\AppData\Roaming\npm;C:\Users\yuli\AppData\Local\Yarn\bin;D:\Softwaregood\cmder;D:\Softwaregood\cmder\vendor\git-for-windows\usr\bin\vendor_perl;D:\Softwaregood\cmder\vendor\git-for-windows\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/commander.js: Not found
+      at Request.params.callback [as _callback] (C:\Users\yuli\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at Request.self.callback (C:\Users\yuli\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (events.js:314:20)
+      at Request.<anonymous> (C:\Users\yuli\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (events.js:314:20)
+      at IncomingMessage.<anonymous> (C:\Users\yuli\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (events.js:420:28)
+      at IncomingMessage.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1252:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "todo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
