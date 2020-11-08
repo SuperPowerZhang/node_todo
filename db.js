@@ -8,11 +8,16 @@ const inquirer = require('inquirer')
 const db = {
     read() {
         return new Promise((resolve, reject) => {
+            console.log('读文件了吗');
+
             fs.readFile(filePath, { flag: 'a+' }, (error, data) => {
+                console.log('进入read了吗');
+
                 if (error) {
-                    console.log(error)
-                    reject(error)
+                    return reject(error)
                 } else {
+                    console.log('进到else了吗');
+
                     let list
                     try {
                         list = JSON.parse(data.toString())

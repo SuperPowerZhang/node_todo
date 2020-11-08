@@ -3,7 +3,7 @@ const inquirer = require('inquirer')
 const prompt = inquirer.createPromptModule()
 
 module.exports.add = async (title) => {
-    const list = await db.read()
+    let list = await db.read()
     list.push({ title, done: false })
     await db.write(list)
 }
@@ -95,7 +95,9 @@ function printTasks(list) {
 }
 
 module.exports.showAll = async () => {
-    const list = await db.read()
+    let list = await db.read()
+    console.log(list);
+
     printTasks(list)
 }
 
