@@ -2,11 +2,11 @@ const homedir = process.env.HOME || require('os').homedir()
 // 获取home变量，没有在使用home路径
 const fs = require('fs')
 const p = require('path')
-const filePath = p.join(homedir, 'list.txt')
+const dbPath = p.join(homedir, 'list.txt')
 const inquirer = require('inquirer')
 
 const db = {
-    read() {
+    read(filePath = dbPath) {
         return new Promise((resolve, reject) => {
             fs.readFile(filePath, { flag: 'a+' }, (error, data) => {
                 if (error) {
@@ -24,7 +24,7 @@ const db = {
             })
         })
     },
-    write(list) {
+    write(list, filePath = dbPath) {
         return new Promise((resolve, reject) => {
             const string = JSON.stringify(list)
             fs.writeFile(filePath, string, (error3) => {
